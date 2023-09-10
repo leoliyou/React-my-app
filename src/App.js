@@ -2,23 +2,14 @@ import { useLayoutEffect } from 'react';
 import './App.css';
 
 function App() {
+  const arr = ["aaa", "ddddddd", "ddddggggg"];
+  const arrMap = arr.map((item) => {
+    return (<li>{item}</li>)
+  });
+
   return (
-    <ul>
-      <li>
-        <a
-          href="http://www.baidu.com"
-          class="comments">
-          第一
-        </a>
-      </li>
-
-      <li class="comments">
-        <a href="http://www.baidu.com">第二</a>
-      </li>
-
-      <li class="comments">
-        <a href="http://www.baidu.com">第三</a>
-      </li>
+    <ul className='comments'>
+      {arrMap }
     </ul>
   );
 }
