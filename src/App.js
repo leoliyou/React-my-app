@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { useLayoutEffect } from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <ul>
+      <li>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+          href="http://www.baidu.com"
+          class="comments">
+          第一
         </a>
-      </header>
-    </div>
+      </li>
+
+      <li class="comments">
+        <a href="http://www.baidu.com">第二</a>
+      </li>
+
+      <li class="comments">
+        <a href="http://www.baidu.com">第三</a>
+      </li>
+    </ul>
   );
 }
 
